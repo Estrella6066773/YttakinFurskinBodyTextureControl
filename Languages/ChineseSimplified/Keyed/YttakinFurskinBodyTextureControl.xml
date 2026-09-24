@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <FurskinBodySection>身体贴图</FurskinBodySection>
+  <FurskinBodyDesc>原模组默认把成年毛绒种的身体换成它自己重绘的一套。关闭后交还原版路径，由原版或其它身体模组决定。</FurskinBodyDesc>
+  <FurskinBodyToggle>强制使用原模组重绘的身体贴图</FurskinBodyToggle>
+  <FurskinBodyToggleTip>关闭：改回原版路径 Bodies/FurCovered_*。开启：固定用原模组重绘的 Bodies/NL/FurCovered_*。</FurskinBodyToggleTip>
+  <FurskinBodyStatusOn>当前使用原模组重绘贴图。</FurskinBodyStatusOn>
+  <FurskinBodyStatusOnMissing>原模组重绘贴图缺失，已退回它自己的取值。</FurskinBodyStatusOnMissing>
+  <FurskinBodyStatusOff>当前使用原版路径贴图。</FurskinBodyStatusOff>
+  <FurskinBodyStatusOffMissing>原版贴图缺失，已退回原模组自己的取值。</FurskinBodyStatusOffMissing>
+  <FurskinBodyStatusAbsent>未检测到原模组，本项不起作用。</FurskinBodyStatusAbsent>
+  <FurskinBodyNote>只决定毛发那层用哪张图，不改画法；毛发之下的裸体贴图仍由原版或其它身体模组决定。幼年与婴儿两档相同。改完立即生效，不必重开游戏。</FurskinBodyNote>
+  <FurskinBodyReset>恢复默认</FurskinBodyReset>
+
+  <FurskinTailSection>尾巴位置</FurskinTailSection>
+  <FurskinTailDesc>在基因自带坐标上叠加偏移，只改画面位置，不改基因效果。每条尾巴、每种体型各存一套数值。仅在停用内置贴图时可用。</FurskinTailDesc>
+  <FurskinTailBodyType>体型</FurskinTailBodyType>
+  <FurskinTailPartType>尾巴</FurskinTailPartType>
+  <FurskinTailPreviewNote>四格依次为正面、朝东、背面、朝西。高度四向同变；前后只动朝东与朝西，且方向相反。取图与层序都照游戏来：朝西没有独立贴图，是用朝东那张镜像着画；层号低的会被毛皮压住一段；有些尾巴正面本就不绘制，那一格是空的，不是缺图。</FurskinTailPreviewNote>
+  <FurskinTailPartsNote>只有列表里的尾巴受控制，翅膀、耳朵、角等不在其中。</FurskinTailPartsNote>
+  <FurskinTailHeight>高度：{0}</FurskinTailHeight>
+  <FurskinTailHeightTip>正数向上抬，负数向下沉；四个朝向都会跟着变。</FurskinTailHeightTip>
+  <FurskinTailDepth>前后：{0}</FurskinTailDepth>
+  <FurskinTailDepthTip>正数向身前挪，负数向身后挪；只影响朝东与朝西，朝西方向相反。</FurskinTailDepthTip>
+  <FurskinTailStatusOk>已接管 {0} 条尾巴，改动立即生效。</FurskinTailStatusOk>
+  <FurskinTailStatusForcedMode>当前强制使用原模组贴图，尾巴保持作者坐标。已保存 {0} 组数值，切回停用档即恢复。</FurskinTailStatusForcedMode>
+  <FurskinTailStatusAbsent>未找到可调尾巴。需要装了含尾巴部件的外观基因模组，并依赖 Better Gene Graphics Framework。</FurskinTailStatusAbsent>
+
+  <FurskinPreviewFacingSouth>正面</FurskinPreviewFacingSouth>
+  <FurskinPreviewFacingEast>朝东</FurskinPreviewFacingEast>
+  <FurskinPreviewFacingNorth>背面</FurskinPreviewFacingNorth>
+  <FurskinPreviewFacingWest>朝西</FurskinPreviewFacingWest>
+
+  <FurskinBodyType_Male>男性</FurskinBodyType_Male>
+  <FurskinBodyType_Female>女性</FurskinBodyType_Female>
+  <FurskinBodyType_Fat>肥胖</FurskinBodyType_Fat>
+  <FurskinBodyType_Hulk>壮硕</FurskinBodyType_Hulk>
+  <FurskinBodyType_Thin>消瘦</FurskinBodyType_Thin>
+  <FurskinBodyType_Baby>婴儿</FurskinBodyType_Baby>
+  <FurskinBodyType_Child>儿童</FurskinBodyType_Child>
+  <FurskinBodyType_FemaleBB>女性（丰满）</FurskinBodyType_FemaleBB>
+
+</LanguageData>

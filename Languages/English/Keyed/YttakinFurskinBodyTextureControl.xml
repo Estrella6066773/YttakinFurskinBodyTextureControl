@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+
+  <FurskinBodySection>Body texture</FurskinBodySection>
+  <FurskinBodyDesc>The original mod swaps adult furskin bodies for its own redrawn set by default. Turned off, they go back to the vanilla paths and let vanilla or other body mods decide.</FurskinBodyDesc>
+  <FurskinBodyToggle>Force the original mod's redrawn body textures</FurskinBodyToggle>
+  <FurskinBodyToggleTip>Off: back to the vanilla Bodies/FurCovered_* paths. On: always use the original mod's redrawn Bodies/NL/FurCovered_* textures.</FurskinBodyToggleTip>
+  <FurskinBodyStatusOn>Using the original mod's redrawn textures.</FurskinBodyStatusOn>
+  <FurskinBodyStatusOnMissing>Those redrawn textures are missing, so the original mod's own value is used instead.</FurskinBodyStatusOnMissing>
+  <FurskinBodyStatusOff>Using the vanilla path textures.</FurskinBodyStatusOff>
+  <FurskinBodyStatusOffMissing>The vanilla textures are missing, so the original mod's own value is used instead.</FurskinBodyStatusOffMissing>
+  <FurskinBodyStatusAbsent>The original mod was not detected, so this does nothing.</FurskinBodyStatusAbsent>
+  <FurskinBodyNote>Only picks which fur texture is used; it does not change how it is drawn, and the bare body layer stays with vanilla or other body mods. Young and baby furskins look the same either way. Takes effect immediately, no restart needed.</FurskinBodyNote>
+  <FurskinBodyReset>Restore defaults</FurskinBodyReset>
+
+  <FurskinTailSection>Tail position</FurskinTailSection>
+  <FurskinTailDesc>Adds an offset on top of the coordinates stored on the gene. Only the art moves; the gene effect does not change. Each tail keeps its own values for each body type. Available only while the built-in textures are disabled.</FurskinTailDesc>
+  <FurskinTailBodyType>Body type</FurskinTailBodyType>
+  <FurskinTailPartType>Tail</FurskinTailPartType>
+  <FurskinTailPreviewNote>The four boxes are front, east, back and west. Height moves all four together; depth moves only east and west, and in opposite directions. Both the artwork picked and the layer order follow the game: the west box borrows the east artwork mirrored, a low layer number gets partly covered by the fur, and some tails are simply not drawn from the front, so that box stays empty on purpose.</FurskinTailPreviewNote>
+  <FurskinTailPartsNote>Only the tails listed below are controlled; wings, ears and horns are not.</FurskinTailPartsNote>
+  <FurskinTailHeight>Height: {0}</FurskinTailHeight>
+  <FurskinTailHeightTip>Positive moves it up, negative moves it down; all four facings follow.</FurskinTailHeightTip>
+  <FurskinTailDepth>Depth: {0}</FurskinTailDepth>
+  <FurskinTailDepthTip>Positive moves it toward the front, negative moves it behind; east and west only, and opposite to each other.</FurskinTailDepthTip>
+  <FurskinTailStatusOk>Position taken over for {0} tails. Changes apply immediately.</FurskinTailStatusOk>
+  <FurskinTailStatusForcedMode>This mod's textures are forced, so tails keep the author's coordinates. {0} saved value sets will come back when you disable the built-in textures.</FurskinTailStatusForcedMode>
+  <FurskinTailStatusAbsent>No adjustable tails found. Needs a cosmetic gene mod with tail parts, and Better Gene Graphics Framework.</FurskinTailStatusAbsent>
+
+  <FurskinPreviewFacingSouth>Front</FurskinPreviewFacingSouth>
+  <FurskinPreviewFacingEast>East</FurskinPreviewFacingEast>
+  <FurskinPreviewFacingNorth>Back</FurskinPreviewFacingNorth>
+  <FurskinPreviewFacingWest>West</FurskinPreviewFacingWest>
+
+  <FurskinBodyType_Male>Male</FurskinBodyType_Male>
+  <FurskinBodyType_Female>Female</FurskinBodyType_Female>
+  <FurskinBodyType_Fat>Fat</FurskinBodyType_Fat>
+  <FurskinBodyType_Hulk>Hulk</FurskinBodyType_Hulk>
+  <FurskinBodyType_Thin>Thin</FurskinBodyType_Thin>
+  <FurskinBodyType_Baby>Baby</FurskinBodyType_Baby>
+  <FurskinBodyType_Child>Child</FurskinBodyType_Child>
+  <FurskinBodyType_FemaleBB>FemaleBB</FurskinBodyType_FemaleBB>
+
+</LanguageData>

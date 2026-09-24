@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>毛绒种身体贴图开关 (Yttakin Furskin Body Texture Control)</name>
+  <author>Estrella6066</author>
+  <packageId>Estrella6066.yttakinFurskinBodyTextureControl</packageId>
+  <modVersion>1.3.1</modVersion>
+  <supportedVersions>
+    <li>1.6</li>
+  </supportedVersions>
+  <description>给「Yttakin furskin retexture and gene tweak」加一个更省事的身体贴图开关，并在关掉重绘时提供尾巴位置微调。面向带有全身毛发基因的单位（毛绒种）。
+
+你为什么需要它：
+原模组想固定用自己的重绘贴图时，往往还要装 XML Extensions，并且改完要重开游戏。本模组把这件事收成模组设置里的一档开关：改完当场刷新，不必重启。
+
+身体贴图怎么选：
+• 关闭（默认）：不用原模组的重绘身体。外观交给原版，或你装的其他身体模组。
+• 开启：成年毛绒种固定用原模组的重绘身体，不被其他身体模组抢走。多数情况下，画面和没装本模组时差不多。
+
+说明：只换毛发那一层的身体贴图；毛发下面的裸体仍由原版或其他身体模组决定。幼年与婴儿两种档位看起来一样。若与原模组自带贴图选项冲突，以本模组为准。
+
+尾巴微调（仅在「关闭重绘」时可用）：
+按每一条尾巴、每一种体型单独调高度和前后位置，旁边有正面／朝东／背面／朝西四格预览，拖滑条即可对照。切回「开启重绘」后尾巴回到作者原设定；你调过的数值会保留，下次再关掉重绘还能用。
+
+可调的是带坐标的尾巴（如兔尾、狐尾、蜥蜴尾）；翅膀、耳朵、角不会动。要微调尾巴，还需要相关的尾巴外观基因模组，以及 Better Gene Graphics Framework——缺了它们只是尾巴微调不可用，身体贴图开关照常可用。
+
+需要 Harmony 与「Yttakin furskin retexture and gene tweak」；需启用「生物科技」。
+</description>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <!--
+        这两个地址不是装饰：ModMetaData.ValidateDependencies 会在「既没有 downloadUrl 也没有 steamWorkshopUrl」
+        时认为该依赖项不合格，除了打印一条警告，还会把这条依赖整个从列表里删掉。
+        也就是说缺地址时，本模组宣称的 Harmony 依赖等于不存在，模组管理器里既看不到依赖标记，
+        也不会在 Harmony 缺失或未启用时提示，加载顺序更不会被这条依赖牵制。
+      -->
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+      <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
+    <li>
+      <packageId>ChenDuXiu.Gene.MoreCuteYttakin</packageId>
+      <displayName>Yttakin furskin retexture and gene tweak</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/3393961480</steamWorkshopUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>ChenDuXiu.Gene.MoreCuteYttakin</li>
+  </loadAfter>
+</ModMetaData>
