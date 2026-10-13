@@ -6,6 +6,7 @@
   <modVersion>1.3.1</modVersion>
   <supportedVersions>
     <li>1.6</li>
+    <li>1.7</li>
   </supportedVersions>
   <description>
   原mod提供了很多好康的兽人亚种基因，但是身体美化服务于某个指定的mod，而本人使用的"[SSR]Beautiful Body 身形美化"存在自己的兽人种分差，在与此mod一同加载时，会导致两者的身体贴图重叠出现。
